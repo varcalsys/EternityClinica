@@ -1,0 +1,112 @@
+﻿@{
+    Layout = null;
+    ViewBag.Title = "VarçalSys | Home";
+    ViewBag.SelectedMenu = "home";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <link rel="shortcut icon" href="/images/favicon.ico.gif" />
+
+    <link href="~/Website/stylesheets/dark/styles.css" rel="stylesheet" />
+    <link href="~/Website/sliders/coin-slider/coin-slider.css" rel="stylesheet" />
+    <meta name="title" content="Varçalsys Soluções em Sistemas" />
+    <meta name="url" content="www.varcalsys.com.br" />
+    <meta name="description" content="Desenvolvimento de Sites e soluções para web e desktop" />
+    <meta name="keywords" content="Desenvolvimento de Softwater" />
+    <meta name="charset" content="ISO-8859-1" />
+    <meta name="autor" content="Cleber Varçal" />
+    <meta name="company" content="Varçalsys Soluções" />
+    <meta name="revisit-after" content="15" />
+    <link rev="made" href="mailto:cleber.varcal@varcalsys.com.br" />
+
+    <title>@ViewBag.Title</title>
+
+    <!-- Initialise jQuery Library -->
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryui")
+    <script type="text/javascript" src="~/Website/js/cufon/cufon-yui.js"></script>
+</head>
+<body id="main" class=".sample_01">
+    <!-- Start Main Nav -->
+    <div class="mainnav_full">
+        @Html.Partial("_Nav")
+    </div>
+    <!-- End Main Nav -->
+    <!-- Begin Header -->
+    <div class="header_full sample_01">
+        <div class="head_top_shadow"></div>
+        <div class="head_bot_shadow"></div>
+        <div id="header">
+            @Html.Partial("_Slider")
+        </div>
+    </div>
+    <!-- End Header -->
+    <!-- Start Content Wrapper -->
+    <div class="content_wrapper">
+        <!-- Content Area -->
+        <div id="content">
+            <div class="columns">
+                <div class="column">
+                    <h2 class="icon web">Works Everywhere</h2>
+                    <p>Donec accumsan malesuada orcidonec sitmet<br>eros lorem isum dolor amet incon. Adipiscing elit maurise pharetra magna accumsan. Malesuada orcdonec umet lorem doloronsec.</p>
+                    <a href="#" title="read more" class="btn alignleft">read more</a>
+                    <div class="clear"></div>
+                </div>
+                <div class="column">
+                    <h2 class="icon graph">Easy to Customize</h2>
+                    <p>Donec accumsan malesuada orcidonec sitmet<br>eros lorem isum dolor amet incon. Adipiscing elit maurise pharetra magna accumsan. Malesuada orcdonec umet lorem doloronsec.</p>
+                    <a href="#" title="read more" class="btn alignleft">read more</a>
+                    <div class="clear"></div>
+                </div>
+                <div class="column">
+                    <h2 class="icon book">Full Documentation</h2>
+                    <p>Donec accumsan malesuada orcidonec sitmet<br>eros lorem isum dolor amet incon. Adipiscing elit maurise pharetra magna accumsan. Malesuada orcdonec umet lorem doloronsec.</p>
+                    <a href="#" title="read more" class="btn alignleft">read more</a>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="hr"></div>
+            <div class="columns2">
+                <div class="column">
+                    <h2>Unlimited Possibilities</h2>
+                    <p class="dropcap-type1">A Nulla eget erat eget nibh accumsan rutrum eget sit amet arcu. Aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincint tristique mi, vitae vulputate elit aliquet at praesent in.</p>
+                    <a href="#" title="read more" class="btn alignleft">read more</a>
+                    <div class="clear"></div>
+                </div>
+                <div class="column">
+                    <h2>Clean and Beautiful</h2>
+                    <p class="dropcap-type2">B Nulla eget erat eget nibh accumsan rutrum eget sit amet arcu. Aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincint tristique mi, vitae vulputate elit aliquet at praesent in.</p>
+                    <a href="#" title="read more" class="btn alignleft">read more</a>
+                    <div class="clear"></div>
+                </div>
+                <div class="column">
+                    <h2>Professional Services</h2>
+                    <p class="dropcap-type3">C Nulla eget erat eget nibh accumsan rutrum eget sit amet arcu. Aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincint tristique mi, vitae vulputate elit aliquet at praesent in.</p>
+                    <a href="#" title="read more" class="btn alignleft">read more</a>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <!-- End Content Wrapper -->
+    <!-- Start Featured Bottom Line -->
+    <div class="featured_bottom_line_full">
+        @Html.Partial("_FeaturedBottomLine")
+    </div>
+    <!-- End Featured Bottom Line -->
+    <!-- Start Footer Sidebar -->
+    <div class="fsb_full">
+        @Html.Partial("_Footer")
+    </div>
+    <!-- End Footer  -->
+    <!-- Theme Hook -->
+    <script src="~/Website/js/Includer.js"></script>
+    <script type="text/javascript">Cufon.now();</script>
+
+</body>
+</html>

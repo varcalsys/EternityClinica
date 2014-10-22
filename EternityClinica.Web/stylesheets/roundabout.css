@@ -1,0 +1,84 @@
+.portfolio_rotator,
+.portfolio_audio_vid {
+	width:545px;
+	float:left;
+	position:relative;
+}
+
+.portfolio_rotator li {
+	position:absolute;
+	left:0;
+	top:0;
+	padding:0;
+	border:4px solid #fff;
+	box-shadow:0 0 4px #979797;
+	-moz-box-shadow:0 0 4px #979797;
+	-webkit-box-shadow:0 0 4px #979797;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-khtml-border-radius:4px;
+	-webkit-border-radius:4px;
+	behavior: url(js/PIE.htc);
+}
+
+.portfolio_rotator li img {display:block;}
+
+.roundabout-holder {
+	width:545px;
+	height:220px;
+	margin:65px 0;
+	padding:0;
+	list-style:none;
+}
+
+.roundabout-moveable-item {
+	width:532px;
+	height:274px;
+	padding:0;
+	display:block;
+	overflow:hidden;
+	cursor:pointer;
+	border:4px solid #fff;
+	box-shadow:0 0 4px #979797;
+	-moz-box-shadow:0 0 4px #979797;
+	-webkit-box-shadow:0 0 4px #979797;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-khtml-border-radius:4px;
+	-webkit-border-radius:4px;
+	behavior: url(js/PIE.htc);
+}
+
+.roundabout-in-focus {cursor: default;}
+
+.btn-prev,
+.btn-next {
+	display:block;
+	width: 25px;
+	height: 25px;
+	overflow: hidden;
+	text-indent: -9999px;
+	position: absolute;
+	right: -35px;
+	z-index: 1000;
+	background-image: url(../images/round_prev_next.png);
+	background-repeat: none;
+}
+
+.btn-prev {
+	top: 150px;
+	background-position: -31px 0;
+}
+
+.btn-prev:hover {
+	background-position: 0 0;
+}
+
+.btn-next {
+	top: 180px;
+	background-position: -31px -31px;
+}
+
+.btn-next:hover {
+	background-position: 0 -31px;
+}

@@ -1,0 +1,5 @@
+c:\users\clebe_000\documents\visual studio 2013\Projects\EternityClinica\EterniyClinica.Domain\bin\Debug\EterniyClinica.Domain.dll
+c:\users\clebe_000\documents\visual studio 2013\Projects\EternityClinica\EterniyClinica.Domain\bin\Debug\EterniyClinica.Domain.pdb
+c:\users\clebe_000\documents\visual studio 2013\Projects\EternityClinica\EterniyClinica.Domain\obj\Debug\EternityClinica.Domain.csprojResolveAssemblyReference.cache
+c:\users\clebe_000\documents\visual studio 2013\Projects\EternityClinica\EterniyClinica.Domain\obj\Debug\EterniyClinica.Domain.dll
+c:\users\clebe_000\documents\visual studio 2013\Projects\EternityClinica\EterniyClinica.Domain\obj\Debug\EterniyClinica.Domain.pdb
