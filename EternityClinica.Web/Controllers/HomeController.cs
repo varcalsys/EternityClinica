@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using EternityClinica.Web.Models;
 
 namespace EternityClinica.Web.Controllers
 {
@@ -96,7 +97,13 @@ namespace EternityClinica.Web.Controllers
 
         public ActionResult Contact()
         {
-           return View();
+           return View(new ContatoViewModel());
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Contact(ContatoViewModel model)
+        {
+            return View(new ContatoViewModel());
         }
     }
 }

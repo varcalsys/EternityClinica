@@ -10,8 +10,8 @@
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <link rel="shortcut icon" href="/images/favicon.ico" />
 
-    <link href="/stylesheets/light/styles.css" rel="stylesheet" />
-    <link href="/sliders/serie3-slider/s3slider.css" rel="stylesheet" />
+    <link href="~/stylesheets/light/styles.css" rel="stylesheet" />
+    <link href="~/sliders/coin-slider/coin-slider.css" rel="stylesheet" />
 
 
     <title>@ViewBag.Title</title>
@@ -34,45 +34,7 @@
         <div id="header">
             <div class="SliderBg">
                 <!-- Begin Slider -->
-                <div class="slideContainer">
-                    <div id="s3slider">
-                        <ul id="s3sliderContent">
-                            <li class="s3sliderImage">
-                                <img src="/images/slider/slide1.jpg" width="952" height="392" alt="" />
-                                <span class="s3slider-right">
-                                    <b class="title">Fotolian Picture Paradise</b>
-                                    <span class="paragraph">Web design is different than traditional print publishing. Every website is an information display container, just as a book is a container; and every web page is like the page in a book.</span>
-                                    <a href="#" title="read more" class="btn alignleft">read more</a><span class="clear"></span>
-                                </span>
-                            </li>
-                            <li class="s3sliderImage">
-                                <img src="/images/slider/slide2.jpg" width="952" height="392" alt="" />
-                                <span class="s3slider-left">
-                                    <b class="title">The Net Setter Branding</b>
-                                    <span class="paragraph">Web design is different than traditional print publishing. Every website is an information display container, just as a book is a container; and every web page is like the page in a book.</span>
-                                    <a href="#" title="read more" class="btn alignleft">read more</a><span class="clear"></span>
-                                </span>
-                            </li>
-                            <li class="s3sliderImage">
-                                <img src="/images/slider/slide3.jpg" width="952" height="392" alt="" />
-                                <span class="s3slider-right">
-                                    <b class="title">Envatius Website Design</b>
-                                    <span class="paragraph">Web design is different than traditional print publishing. Every website is an information display container, just as a book is a container; and every web page is like the page in a book.</span>
-                                    <a href="#" title="read more" class="btn alignleft">read more</a><span class="clear"></span>
-                                </span>
-                            </li>
-                            <li class="s3sliderImage">
-                                <img src="/images/slider/slide4.jpg" width="952" height="392" alt="" />
-                                <span class="s3slider-left">
-                                    <b class="title">Rokable Presso Print Design</b>
-                                    <span class="paragraph">Web design is different than traditional print publishing. Every website is an information display container, just as a book is a container; and every web page is like the page in a book.</span>
-                                    <a href="#" title="read more" class="btn alignleft">read more</a><span class="clear"></span>
-                                </span>
-                            </li>
-                            <li class="clear s3sliderImage"></li>
-                        </ul>
-                    </div>
-                </div>
+                @Html.Partial("_Slider")
                 <!-- End Slider -->
             </div>
         </div>
@@ -130,7 +92,7 @@
     <!-- End Content Wrapper -->
     <!-- Start Featured Bottom Line -->
     <div class="featured_bottom_line_full">
-        @Html.Partial("_FeaturedBottomLine")
+        @*@Html.Partial("_FeaturedBottomLine")*@
     </div>
     <!-- End Featured Bottom Line -->
     <!-- Start Footer Sidebar -->

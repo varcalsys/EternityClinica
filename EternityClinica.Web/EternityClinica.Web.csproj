@@ -115,6 +115,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ContatoViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -123,6 +124,7 @@
     <Content Include="assets\success.gif" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="gallery\fullsize\folio_1_04.jpg" />
@@ -186,7 +188,6 @@
     <Content Include="gallery\thumb\gallery_11.jpg" />
     <Content Include="gallery\thumb\gallery_12.jpg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
     <Content Include="icons\16x16\add.png" />
     <Content Include="icons\16x16\add_outline.png" />
     <Content Include="icons\16x16\add_small.png" />
@@ -439,10 +440,6 @@
     <Content Include="images\slider\slide2.jpg" />
     <Content Include="images\slider\slide3.jpg" />
     <Content Include="images\slider\slide4.jpg" />
-    <Content Include="images\slider\slide5.jpg" />
-    <Content Include="images\slider\slide6.jpg" />
-    <Content Include="images\slider\slide7.jpg" />
-    <Content Include="images\slider\slide8.jpg" />
     <Content Include="images\slider_bg.png" />
     <Content Include="images\spacer.gif" />
     <Content Include="images\sprite.png" />
@@ -594,7 +591,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Shared\_FeaturedBottomLine.cshtml" />
     <Content Include="Views\Shared\_Footer.cshtml" />
@@ -618,10 +614,10 @@
     <Content Include="Views\Home\Blog_Alternate.cshtml" />
     <Content Include="Views\Home\Blog_Single.cshtml" />
     <Content Include="Views\Home\Partners.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -629,6 +625,16 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EternityClinica.Util\EternityClinica.Util.csproj">
+      <Project>{f12d9b78-38a0-467d-9d92-aceb35482a5c}</Project>
+      <Name>EternityClinica.Util</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EterniyClinica.Domain\EternityClinica.Domain.csproj">
+      <Project>{9aa95505-e683-4fac-a79c-2034859a752c}</Project>
+      <Name>EternityClinica.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

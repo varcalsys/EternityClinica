@@ -2,7 +2,7 @@
 
 #contact label {display: block;}
 
-#contact input[type="submit"][disabled] { background:#888; cursor: default; }
+/*#contact input[type="submit"][disabled] { background:#888; cursor: default; }*/
 #contact span.required{ color: #ff0000; } /* Select the colour of the * if the field is required. */
 
 #message { margin: 10px 0; padding: 0; }

@@ -1,0 +1,5 @@
+D:\Projetos\EternityClinica\EternityClinica.Util\bin\Debug\EternityClinica.Util.dll
+D:\Projetos\EternityClinica\EternityClinica.Util\bin\Debug\EternityClinica.Util.pdb
+D:\Projetos\EternityClinica\EternityClinica.Util\obj\Debug\EternityClinica.Util.csprojResolveAssemblyReference.cache
+D:\Projetos\EternityClinica\EternityClinica.Util\obj\Debug\EternityClinica.Util.dll
+D:\Projetos\EternityClinica\EternityClinica.Util\obj\Debug\EternityClinica.Util.pdb

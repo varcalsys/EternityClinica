@@ -6,14 +6,16 @@
     
     @*@Styles.Render("~/Content/css")*@
     <link href="~/stylesheets/light/styles.css" rel="stylesheet" />   
-    <link href="~/stylesheets/roundabout.css" rel="stylesheet" />
+    <link href="/sliders/coin-slider/coin-slider.css" rel="stylesheet" />
     
   
     <title>@ViewBag.Title</title>
 
     <!-- Initialise jQuery Library -->
-    @Scripts.Render("~/bundles/jquery")
+    
+    @Scripts.Render("~/bundles/jquery")   
     @Scripts.Render("~/bundles/jqueryui")
+   
     @RenderSection("scripts", required: false)
    
     <script type="text/javascript" src="~/js/cufon/cufon-yui.js"></script>
@@ -45,7 +47,7 @@
 
     <!-- Start Featured Bottom Line -->
     <div class="featured_bottom_line_full">
-        @Html.Partial("_FeaturedBottomLine")
+        @*@Html.Partial("_FeaturedBottomLine")*@
     </div>
     <!-- End Featured Bottom Line -->
 
@@ -57,7 +59,9 @@
 
     <!-- Theme Hook -->
   
-    <script src="~/js/Includer.js"></script>
+    
+    <script src="~/js/Includer.js"></script>    
     <script type="text/javascript">Cufon.now();</script>
+    
 </body>
 </html>

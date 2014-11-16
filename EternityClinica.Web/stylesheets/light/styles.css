@@ -104,7 +104,7 @@ small			{font-size:0.8em;}
 
 h1				{
 				font:36px Arial, Helvetica, sans-serif;
-				color:#ffff96;
+				color:#000;
 				line-height:0.5em;
 				margin-bottom:0.5em;
 				}
@@ -542,7 +542,7 @@ a:hover.logo	{
 				/*border-top:1px solid #0b0b0a;
 				background:url(../../images/bg_dark.png) #1c1d20;*/
 
-                background: url(../../images/main_nav_bg.gif) bottom repeat-x #F8F8F8;
+                background: #ffff96;
 				}
 
 #footer			{
@@ -590,7 +590,7 @@ a:hover.logo	{
 				}
 
 .column			{
-				width:auto;
+                width: 300px;
 				float:left;
 				position:relative;
 				}
