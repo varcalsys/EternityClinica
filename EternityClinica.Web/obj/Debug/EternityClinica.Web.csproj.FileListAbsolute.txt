@@ -54,3 +54,4 @@ D:\Projetos\EternityClinica\EternityClinica.Web\bin\EternityClinica.Util.dll
 D:\Projetos\EternityClinica\EternityClinica.Web\bin\EterniyClinica.Domain.dll
 D:\Projetos\EternityClinica\EternityClinica.Web\bin\EternityClinica.Util.pdb
 D:\Projetos\EternityClinica\EternityClinica.Web\bin\EterniyClinica.Domain.pdb
+D:\Projetos\EternityClinica\EternityClinica.Web\bin\jQuery.Validation.Unobtrusive.Native.dll

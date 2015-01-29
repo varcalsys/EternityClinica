@@ -127,7 +127,8 @@ h2 a:hover		{
 				}
 				
 h2.icon			{
-				padding:5px 0 5px 50px;
+				padding:5px 0 5px 60px;                
+                height: 50px;
 				background-position:0 0;
 				background-repeat:no-repeat;
 				}
@@ -157,6 +158,7 @@ h2.twitter		{background-image:url(../../icons/twitter.png);}
 h2.user			{background-image:url(../../icons/user.png);}
 h2.wallet		{background-image:url(../../icons/wallet.png);}
 h2.web			{background-image:url(../../icons/web.png);}
+h2.dente		{background-image:url(../../icons/dente.png); padding-top: 15px;}
 
 h3				{
 				font:20px Arial, Verdana, Helvetica, sans-serif;
@@ -260,9 +262,9 @@ input[type=submit]:focus	{
 
 .mainnav_full	{
 				width:100%;
-				padding-top:5px;
+				
 				background:url(../../images/main_nav_bg.gif) bottom repeat-x #F8F8F8;
-				border-bottom:1px solid #fff;
+				
 				}
 
 #MainNav		{
@@ -296,7 +298,7 @@ a:hover.logo	{
 /* -- menu -- */
 
 #menu			{
-                margin-top: 60px;
+                margin-top: 35px;
 				float:left;
 				position:relative;
 				z-index:1001;
@@ -315,7 +317,7 @@ a:hover.logo	{
 
 #menu li a		{
 				width:auto;
-				height:37px;
+				/*height:57px;*/
 				margin:0;
 				padding:15px 18px 10px;
 				position:relative;
@@ -526,7 +528,7 @@ a:hover.logo	{
 #sp .content_wrapper,
 #sp .content_wrapper_sbr,
 #sp .content_wrapper_sbl {
-				width:940px;
+				width:1000px;
 				min-height:320px;
 				margin:-107px auto 0;
 				padding:45px;
@@ -628,7 +630,7 @@ a:hover.logo	{
 
 .gallery		{
 				width:956px;
-				margin-left:-12px;
+				margin-left:4px;
 				margin-bottom:20px;
 				position:relative;
 				}
@@ -660,8 +662,8 @@ a:hover.logo	{
 .gallery li:hover	{border:4px solid #8c8b8b;}
 
 .gallery li .gallery_item	{
-				width:184px;
-				height:164px;
+				width:214px;
+				height:187px;
 				padding:15px;
 				overflow:hidden;
 				position:relative;
@@ -702,7 +704,7 @@ a:hover.logo	{
 				line-height:1.4em;
 				overflow:hidden;
 				margin-bottom:10px;
-				padding-bottom:6px;
+				padding-bottom:30px;
 				position:relative;
 				border-bottom:1px solid #4D4D4D;
 				}
@@ -725,7 +727,7 @@ a:hover.logo	{
 
 .partners		{
 				width:956px;
-				margin-left:-12px;
+				margin-left:4px;
 				margin-bottom:20px;
 				position:relative;
 				}
@@ -767,8 +769,8 @@ a:hover.logo	{
 .partners li .partner_item img	{position:absolute;}
 
 .partners li .partner_item .caption {
-				width:184px;
-				height:164px;
+				width:214px;
+				height:187px;
 				padding:15px;
 				background:#000;
 				color:#fff;
@@ -786,8 +788,8 @@ a:hover.logo	{
 				height:1.1em;
 				line-height:1.4em;
 				overflow:hidden;
-				margin-bottom:10px;
-				padding-bottom:6px;
+				margin-bottom:12px;
+				padding-bottom:30px;
 				position:relative;
 				border-bottom:1px solid #4D4D4D;
 				}
@@ -1337,13 +1339,36 @@ a:hover.comment-reply-link	{
 				vertical-align:middle;
 				margin-left:15px;
 				}
+
+#ajaxsuccess {
+        background: #b2d1ff;
+		color:#000;
+		font: 20px/60px 'Open Sans', sans-serif;
+		height:60px;
+		display: none;
+		padding-left:10px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 30px;
+	}
+
+
+.error {
+		font: 10px/22px 'Open Sans', sans-serif;
+		text-transform:uppercase;
+		display: none;
+		color:#ff0000;
+	}
+
+
 				
 /* ========== SIDEBARS ========== */
 
 /* ---- Content Sidebar ---- */
 
 #sidebar		{
-				width:275px;
+				width:270px;
 				min-height:750px;
 				position:relative;
 				}
@@ -1586,7 +1611,7 @@ img:hover.pic	{
 .wp-pagenavi span,
 .comments-navigation a	{
 				width:auto;
-				height:12px;
+				height:22px;
 				display:block;
 				float:left;
 				padding:7px 9px;
@@ -1675,17 +1700,18 @@ img:hover.pic	{
 				font-size:12px;
 				line-height:11px;
 				text-align:center;
-				color:#fff;
-				background:url(../../images/btn_px.gif) top repeat-x #3c3c3c;
+				color:#000;
+                background:#ffff96;
+				
 				}
 
 a:hover.btn,
 a:focus.btn		{
-				color:#000;
+				color:#fff;
 				text-decoration:none;
 				padding:6px 11px;
 				border:1px solid #000;
-				background:#ffff96;
+				background:url(../../images/btn_px.gif) top repeat-x #3c3c3c;
 				}
 				
 .big_btn		{
@@ -2055,6 +2081,7 @@ ul.ordered.type2	{list-style:decimal-leading-zero;}
 				
 ul.unordered li		{
 					padding:0 0 1.5em 25px;
+                    margin-left: 5px;
 					background-position: 0 1px;
 					background-repeat:no-repeat;
 					}
@@ -2149,3 +2176,9 @@ ul.unordered.type26 li	{background-image:url(../../icons/16x16/star_full.png);}
 
 .table tr > td:last-of-type		{border-right:1px solid #D6D6D7;}
 .table tr > td:last-of-type		{border-right:1px solid #D6D6D7;}
+
+
+
+.especialidades section.content-current {
+	display: block;
+}

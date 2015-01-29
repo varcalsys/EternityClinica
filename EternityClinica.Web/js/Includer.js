@@ -423,9 +423,9 @@ $.include('/js/jquery.easing.1.3.js');
 	}
 	
 	// Contact Form Plugin
-	if (jQuery("#contact").length) {
-		$.include('/js/jquery.jigowatt.js');
-	}
+	//if (jQuery("#contact").length) {
+	//	$.include('/js/jquery.jigowatt.js');
+	//}
 
 	// jQuery Uniform Plugin
 	if (jQuery("select, input:checkbox, input:radio").length) {

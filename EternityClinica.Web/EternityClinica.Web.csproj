@@ -39,6 +39,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="jQuery.Validation.Unobtrusive.Native">
+      <HintPath>..\packages\jQuery.Validation.Unobtrusive.Native.MVC5.1.1.1.0\lib\net45\jQuery.Validation.Unobtrusive.Native.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -243,6 +246,7 @@
     <Content Include="icons\calendar.png" />
     <Content Include="icons\client.png" />
     <Content Include="icons\database.png" />
+    <Content Include="icons\dente.png" />
     <Content Include="icons\download.png" />
     <Content Include="icons\facebook.png" />
     <Content Include="icons\graph.png" />
@@ -355,8 +359,6 @@
     <Content Include="images\info_icon4.png" />
     <Content Include="images\loader.gif" />
     <Content Include="images\logo.png" />
-    <Content Include="images\logo1.png" />
-    <Content Include="images\logo3.png" />
     <Content Include="images\logo4.png" />
     <Content Include="images\main_nav_bg.gif" />
     <Content Include="images\menu_slide.gif" />
@@ -368,6 +370,7 @@
     <Content Include="images\nextposts_arrow.png" />
     <Content Include="images\no_image.gif" />
     <Content Include="images\okay_gray.png" />
+    <Content Include="js\contact.js" />
     <Content Include="patterns\pattern_22.jpg" />
     <Content Include="images\pointer_posted_content.png" />
     <Content Include="images\pointer_posted_content_dark.png" />
@@ -522,6 +525,7 @@
     <Content Include="Scripts\jquery-1.6.4.js" />
     <Content Include="assets\Thumbs.db" />
     <Content Include="gallery\.DS_Store" />
+    <None Include="Properties\PublishProfiles\DebugEternity.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -580,7 +584,9 @@
     <Content Include="verify\1.png" />
     <Content Include="verify\2.png" />
     <Content Include="verify\3.png" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -590,7 +596,7 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Sobre.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Shared\_FeaturedBottomLine.cshtml" />
     <Content Include="Views\Shared\_Footer.cshtml" />
@@ -602,19 +608,12 @@
     <Content Include="verify\Thumbs.db" />
     <Content Include="Views\Shared\Index.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\Service.cshtml" />
-    <Content Include="Views\Home\Typography.cshtml" />
-    <Content Include="Views\Home\Gallery.cshtml" />
-    <Content Include="Views\Home\Portifolio.cshtml" />
-    <Content Include="Views\Home\Portifolio2.cshtml" />
-    <Content Include="Views\Home\Portifolio3.cshtml" />
-    <Content Include="Views\Home\Portifolio4.cshtml" />
-    <Content Include="Views\Home\PortifolioSingle.cshtml" />
-    <Content Include="Views\Home\Blog.cshtml" />
-    <Content Include="Views\Home\Blog_Alternate.cshtml" />
-    <Content Include="Views\Home\Blog_Single.cshtml" />
-    <Content Include="Views\Home\Partners.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Fotos.cshtml" />
+    <Content Include="Views\Home\Unidades.cshtml" />
+    <Content Include="Views\Home\Parceiros.cshtml" />
+    <Content Include="Views\Home\Contato.cshtml" />
+    <Content Include="Views\Home\Especialidades.cshtml" />
+    <Content Include="Views\Home\Convenios.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

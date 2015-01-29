@@ -7,21 +7,24 @@ namespace EterniyClinica.Domain
 {
     public class SendMail
     {
-        const string nomeRemetente = "VarçalSys Soluções";
-        const string emailRemetente = "contato@varcalsys.com.br";
-        const string senha = "cleber30";
-        const string SMTP = "webmail.varcalsys.com.br";
-        const string assuntoMensagem = "Recebimento Confirmado";
-        const string conteudoMensagem = "Seu email foi encaminhado para o setor responsável com sucesso";
+        const string nomeRemetente = "Eternity Clinica";
+        const string emailRemetente = "eternityclinica@eternity.com";
+        const string senha = "admin@123";
+        const string SMTP = "webmail.eternityclinica.com";
+        
+        
         string emailDestinatario = "";
 
         //Cria objeto com os dados do SMTP
-        SmtpClient objSmtp = new SmtpClient();
-        
+        SmtpClient objSmtp = new SmtpClient();        
         NetworkCredential credentials = new NetworkCredential(emailRemetente, senha);
-
         public void EnviarEmail(Contato contato)
         {
+            const string assuntoMensagem = "Recebimento Confirmado";
+            string conteudoMensagem = "A "+nomeRemetente+" agradece seu contato, " + contato.Nome + " <br/><br/> Seu email foi encaminhado para o setor responsável com sucesso" +
+                                     " <br/> Retornaremos o contato o mais breve possível" +
+                                     " <br/><br/> Obrigado" +
+                                     " <br/> " + nomeRemetente;
 
             emailDestinatario = contato.Email;
             //Criacao do email
@@ -44,21 +47,20 @@ namespace EterniyClinica.Domain
 
             Enviar(objEmail);
         }
-
         public void EnviaEmailResponsavel(Contato contato)
         {
+            
             //Criacao do email
             var objEmail = new MailMessage();
             objEmail.From = new MailAddress(nomeRemetente + "<" + emailRemetente + ">");
-            objEmail.To.Add("faleconosco@varcalsys.com.br");
+            objEmail.To.Add("contato@eternityclinica.com");
             objEmail.Priority = MailPriority.Normal;
             objEmail.IsBodyHtml = true;
-            objEmail.Subject = assuntoMensagem;
-            objEmail.Body = "Você recebeu uma nova mensagem";
+            objEmail.Subject = contato.Assunto + "( Enviada pelo Site)";
+            objEmail.Body = contato.Comentario;
             //Evitar caracteres estranhos
             objEmail.SubjectEncoding = Encoding.GetEncoding("ISO-8859-1");
             objEmail.BodyEncoding = Encoding.GetEncoding("ISO-8859-1");
-
             //Alocamos o endereço do host para enviar os e-mails  
             objSmtp.Credentials = credentials;
             objSmtp.Host = SMTP;

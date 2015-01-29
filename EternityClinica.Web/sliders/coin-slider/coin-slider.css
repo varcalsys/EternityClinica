@@ -28,7 +28,7 @@
 #cs-title-coin-slider {
 				position:absolute;
 				opacity: 0.8 !important;
-				background:#F5F5DC;
+				/*background:#F5F5DC;*/
 				color:#000;
 				width:300px;
 				z-index:89;
@@ -99,8 +99,8 @@ a.cs-next 		{
 .cs-buttons 	{
 				position:absolute !important;
 				bottom:0px;
-				left:50% !important;
-				background:#fff;
+				left:47.8% !important;
+				background:rgba(255, 255, 255, 0.9);
 				padding:7px 0 0 10px;
 				z-index:100;
 				border-radius:4px 4px 0 0;

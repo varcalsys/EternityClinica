@@ -5,7 +5,7 @@ namespace EternityClinica.Web.Models
 {
     public class ContatoViewModel
     {
-        public int? Id { get; set; }
+        public int Id { get; set; }
 
         [Required(ErrorMessage = " * Campo obrigatório")]
         public string Nome { get; set; }

@@ -3,65 +3,58 @@
 <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <link rel="shortcut icon" href="/images/favicon.ico" />
-    
-    @*@Styles.Render("~/Content/css")*@
-    <link href="~/stylesheets/light/styles.css" rel="stylesheet" />   
+
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/stylesheets/light/styles.css" rel="stylesheet" />
     <link href="/sliders/coin-slider/coin-slider.css" rel="stylesheet" />
     
-  
     <title>@ViewBag.Title</title>
 
     <!-- Initialise jQuery Library -->
-    
-    @Scripts.Render("~/bundles/jquery")   
-    @Scripts.Render("~/bundles/jqueryui")
-   
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/jquery-1.6.4.js"></script>
+    <script src="~/Scripts/jquery-ui-1.8.24.js"></script>
+    <script type="text/javascript" src="/js/contact.js"></script>
     @RenderSection("scripts", required: false)
-   
+
     <script type="text/javascript" src="~/js/cufon/cufon-yui.js"></script>
-    
+
 </head>
-<body id="sp" onload="initialize()">
-    <!-- Start Main Nav -->
-    <div class="mainnav_full">
-        @Html.Partial("_Nav")
-    </div>
-    <!-- End Main Nav -->
+        <body id="sp" > 
+            <!-- Start Main Nav -->
+            <div class="mainnav_full">
+                @Html.Partial("_Nav")
+            </div>
+            <!-- End Main Nav -->
+            <!-- Begin Header -->
+            <!-- Begin Header -->
+            <div class="header_full sample_22">
+                <div class="head_top_shadow"></div>
+                <div class="head_bot_shadow"></div>
+                <div id="header"></div>
+            </div>
+            <!-- End Header -->
+            <!-- End Header -->
+            <!-- Start Content Wrapper -->
+            @RenderBody()
 
-    <!-- Begin Header -->
-<!-- Begin Header -->
-<div class="header_full sample_22">
-    <div class="head_top_shadow"></div>
-    <div class="head_bot_shadow"></div>
-    <div id="header"></div>
-</div>
-<!-- End Header -->
-    <!-- End Header -->
 
-    <!-- Start Content Wrapper -->
-    
-        @RenderBody()
-      
-   
-    <!-- End Content Wrapper -->
+            <!-- End Content Wrapper -->
+            <!-- Start Featured Bottom Line -->
+            @*<div class="featured_bottom_line_full">
+                    @Html.Partial("_FeaturedBottomLine")
+                </div>*@
+            <!-- End Featured Bottom Line -->
+            <!-- Start Footer Sidebar -->
+            <div class="fsb_full">
+                @Html.Partial("_Footer")
+            </div>
+            <!-- End Footer  -->
+            <!-- Theme Hook -->
 
-    <!-- Start Featured Bottom Line -->
-    <div class="featured_bottom_line_full">
-        @*@Html.Partial("_FeaturedBottomLine")*@
-    </div>
-    <!-- End Featured Bottom Line -->
-
-    <!-- Start Footer Sidebar -->
-    <div class="fsb_full">
-        @Html.Partial("_Footer")
-    </div>
-    <!-- End Footer  -->
-
-    <!-- Theme Hook -->
-  
-    
-    <script src="~/js/Includer.js"></script>    
-    <script type="text/javascript">Cufon.now();</script>
-    
-</body>
+            <script src="~/js/Includer.js"></script>
+            <script src="~/Scripts/jquery.validate.min.js"></script>
+            <script type="text/javascript">Cufon.now();</script>
+        </body>
 </html>

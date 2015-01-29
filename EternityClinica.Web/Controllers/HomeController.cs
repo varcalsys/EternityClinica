@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using EternityClinica.Web.Models;
+using EterniyClinica.Domain;
 
 namespace EternityClinica.Web.Controllers
 {
@@ -13,97 +14,68 @@ namespace EternityClinica.Web.Controllers
         public ActionResult Index()
         {
             return View();
-        }       
+        }
 
-        #region "Portifolio Demo"
-
-        public ActionResult Portifolio()
+        public ActionResult Sobre()
         {
             return View();
         }
 
-        public ActionResult Portifolio2()
+        public ActionResult Especialidades()
         {
             return View();
         }
 
-        public ActionResult Portifolio3()
+
+        public ActionResult Parceiros()
         {
             return View();
         }
 
-        public ActionResult Portifolio4()
-        {
-            return View();
-        }
-
-        public ActionResult PortifolioSingle()
-        {
-            return View();
-        }
-
-        #endregion
-
-        #region "Blog"
-
-        public ActionResult Blog()
-        {
-            return View();
-        }
-
-        public ActionResult Blog_Alternate()
-        {
-            return View();
-        }
-
-        public ActionResult Blog_Single()
-        {
-            return View();
-        }
-
-        #endregion
-
-        //public ActionResult About()
-        //{
-            
-
-        //    return View();
-        //}
-
-        public ActionResult Service()
-        {
-            return View();
-        }
-
-        public ActionResult About()
-        {
-            return View();
-        }
-
-        public ActionResult Typography()
-        {
-            return View();
-        }
-
-        public ActionResult Gallery()
-        {
-            return View();
-        }
-
-        public ActionResult Partners()
-        {
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-           return View(new ContatoViewModel());
-        }
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Contact(ContatoViewModel model)
+        public ActionResult Contato()
         {
             return View(new ContatoViewModel());
         }
+        [HttpPost]
+        public string Contato(ContatoViewModel model)
+        {
+            try
+            {
+                var email = new SendMail();
+                var contato = new Contato
+                {
+                    Id = model.Id,
+                    Nome = model.Nome,
+                    Email = model.Email,
+                    Assunto = model.Assunto,
+                    Telefone = model.Telefone,
+                    Comentario = model.Comentario
+                };
+                email.EnviarEmail(contato);
+                email.EnviaEmailResponsavel(contato);
+                return "ok";
+            }
+
+            catch
+            {
+                return "erro";
+            }
+        }
+
+        public ActionResult Unidades()
+        {
+            return View();
+        }
+
+
+        public ActionResult Convenios()
+        {
+            return View();
+        }
+                    
+        public ActionResult Fotos()
+        {
+            return View();
+        }       
     }
 }
