@@ -98,6 +98,7 @@ a:hover 		{
 p				{
 				margin:0 0 1.5em 0;
 				padding:0;
+                text-align: justify;
 				}
 
 small			{font-size:0.8em;}
@@ -186,10 +187,17 @@ ul, ol			{
 				padding:0 0 0.75em;
 				list-style:none;
 				}
+
 				
 ul li, ol li	{
 				margin:0;
 				padding:0.75em 0;
+				}
+
+#contatos ul li, ol li	{
+				margin:0;
+				padding:0.75em 0;
+                display: inline;
 				}
 
 address			{
@@ -244,16 +252,17 @@ input.submit	{
 				font-size:12px;
 				text-align:center;
 				border:none;
-				color:#fff;
-				background:#454545;
+                color:#000;
+                background:#ffff96;
+				
 				}
 				
 input[type=submit]:hover,
-input[type=submit]:focus	{
-				color:#000;
+input[type=submit]:focus	{				
 				padding:4px 11px;
 				border:1px solid #000;
-				background:#DEDEDE;
+				color:#fff;
+				background:#454545;
 				}
 
 /* ========== GENERAL STRUCTURE ========== */
@@ -1312,6 +1321,10 @@ a:hover.comment-reply-link	{
 				
 /* ========== Contact Page ========== */
 
+#contact {
+    margin-left: 3%;
+}
+
 #contact label	{display:block;}
 .wpcf7 label	{display:block;}
 				
@@ -1356,10 +1369,15 @@ a:hover.comment-reply-link	{
 
 .error {
 		font: 10px/22px 'Open Sans', sans-serif;
-		text-transform:uppercase;
+		/*text-transform:uppercase;*/
 		display: none;
 		color:#ff0000;
 	}
+
+#err-state {
+    font-size: 13pt;
+    font-weight: bold;
+}
 
 
 				
@@ -1632,6 +1650,10 @@ img:hover.pic	{
 				color:#000;
 				background:#DEDEDE;
 				}
+.wp-pagenavi ul li.active a{
+				color:#fff;
+				background:#000;
+				}
 				
 .navigation a	{			/* Default Nav Buttons */
 				color:#fff;
@@ -1668,7 +1690,6 @@ img:hover.pic	{
 				text-indent:-9999px;
 				line-height:999px;
 				}
-
 .wp-pagenavi a.previouspostslink {background:url(../../images/previousposts_arrow.png) center 6px no-repeat #3c3c3c;}
 .wp-pagenavi a:hover.previouspostslink {background:url(../../images/previousposts_arrow.png) center 5px no-repeat #3c3c3c; padding:6px 8px;}
 .wp-pagenavi a.nextpostslink {background:url(../../images/nextposts_arrow.png) center 6px no-repeat #3c3c3c;}

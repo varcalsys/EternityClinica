@@ -28,18 +28,18 @@
                             <p>
                                 <label for="Nome"><span class="required">*</span> Nome</label>
                                 <input name="Nome" type="text" id="Nome" size="50" value="" />
-                                <span class="error" id="err-name">digite seu nome</span>
+                                <span class="error" id="err-name"> Digite seu nome</span>
                             </p>
                             <p>
                                 <label for="Email"><span class="required">*</span> Email</label>
                                 <input name="Email" type="email" id="Email" size="50" value="" />
-                                <span class="error" id="err-email">digite seu e-mail</span>
-                                <span class="error" id="err-emailvld">forma de e-mail não é valido</span>
+                                <span class="error" id="err-email"> Digite seu e-mail</span>
+                                <span class="error" id="err-emailvld"> Formato de email inválido</span>
                             </p>
                             <p>
                                 <label for="Telefone"><span class="required">*</span> Telefone</label>
                                 <input name="Telefone" type="text" id="Telefone" size="50" value="" />
-                                <span class="error" id="err-phone">digite seu telefone</span>
+                                <span class="error" id="err-phone"> Digite seu telefone</span>
                             </p>
                             <p>
                                 <label for="Assunto"><span class="required">*</span> Assunto</label>
@@ -49,21 +49,20 @@
                                     <option value="Reclamacao">Reclamação</option>
                                     <option value="Duvidas">Dúvidas</option>
                                 </select>
-                                <span class="error" id="err-subject">escolha o assunto</span>
+                                <span class="error" id="err-subject">Escolha o assunto</span>
                             </p>
                             <p>
-                                <label for="Comentario"><span class="required">*</span> Mensagem</label>
+                                <label for="Comentario"><span class="required">*</span> Mensagem</label> 
                                 <textarea name="Comentario" rows="8" cols="40" id="Comentario" style="width: 450px;"></textarea>
-                                <span class="error" id="err-comment">digite sua mensagem</span>
+                                <span class="error" id="err-comment"> Digite sua mensagem</span>
                             </p>
 
-                            <p><input type="button" class="submit" id="send" value="Enviar" /></p>
-                            
+                            <p><input type="submit" class="submit" id="send" value="Enviar" /></p>            
                         </fieldset>
-                    </form>
+                        <div class="error" id="err-state"></div>
+                    </form>                  
                     
-                    <div class="clear"></div>
-                    
+                    <div class="clear"></div>                  
                 </div>
             </div>
             <div class="column">
@@ -72,38 +71,44 @@
                 <br />
                 <h2>Nossas Unidades</h2>
                 <p>
-                    <input type="button" class="submit" onclick="initialize();" value="Centro" /> 
-                    <input type="button" class="submit" onclick="initialize1();" value="Jabaquara" />
-                    <input type="button" class="submit" onclick="initialize2();" value="Paulista" />
+                    <div id="contatos" class="nav nav-pills">
+                        <ul>
+                            <li onclick="initialize();" class="active"><a href="#centro" data-toggle="tab"><input type="button" class="submit" value="Centro" /></a></li>
+                            <li onclick="initialize1();"><a href="#jabaquara" data-toggle="tab" ><input type="button" class="submit" value="Jabaquara"></a></li>
+                            <li onclick="initialize2();"><a href="#paulista" data-toggle="tab" ><input type="button" class="submit" value="Paulista"></a></li>                        
+                        </ul>
+                    </div>
                 </p>
-                <div id="Centro">
-                    <h2>Unidade Centro</h2>
-                    <address id="Centro">
-                        Rua Brigadeiro Tobias, 118 Loja 303<br />
-                        <strong>Telefone:</strong>   11-2765-2917 / 3313-3992 / 3313-4035<br />                      
-                    </address>
-                </div>               
-                <div id="Jababaquara" style="display: none;">
-                    <h2>Unidade Jabaquara</h2>
-                    <address>
-                        Av.Eng. Armando de Arruda Pereira, 3158-A sala 1<br />
-                        <strong>Telefone:</strong>   11-5021-4026<br />
-                        <p></p>
-                    </address>
-                </div>                
-                <div id="Paulista" style="display: none;">
-                    <h2>Unidade Paulista</h2>
-                    <address>
-                        Av.Paulista, 2073 sala 609 - Horsa 1 <br />Conjunto Nacional<br />
-                        <strong>Telefone:</strong>   11-3171-0702<br />
-                        <p></p>
-                    </address>
-                </div>               
+                <div class="tab-content">
+                    <div class="tab-pane active" id="centro">
+                        <h2>Unidade Centro</h2>
+                        <address>
+                            Rua Brigadeiro Tobias, 118 Loja 303<br />
+                            <strong>Telefone:</strong>   11-2765-2917 / 3313-3992 / 3313-4035<br />
+                        </address>
+                </div>
+                    <div class="tab-pane" id= "jabaquara">
+                        <h2>Unidade Jabaquara</h2>
+                        <address>
+                            Av.Eng. Armando de Arruda Pereira, 3158-A sala 1<br />
+                            <strong>Telefone:</strong>   11-5021-4026<br />
+                            <p></p>
+                        </address>
+                    </div>
+                    <div class="tab-pane" id="paulista">
+                        <h2>Unidade Paulista</h2>
+                        <address>
+                            Av.Paulista, 2073 sala 609 - Horsa 1 <br />Conjunto Nacional<br />
+                            <strong>Telefone:</strong>   11-3171-0702<br />
+                            <p></p>
+                        </address>
+                    </div>
+                </div>
             </div>
-            <div class="clear"></div>
-        </div>
-        <div class="clear"></div>
-    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
 </div>
 <!-- End Content Wrapper -->
 
@@ -127,9 +132,9 @@
         });
 
         
-        $('#Paulista').fadeOut();
-        $("#Jababaquara").fadeOut();
-        $('#Centro').fadeIn('slow');
+        //$('#Paulista').fadeOut();
+        //$("#Jababaquara").fadeOut();
+        //$('#Centro').fadeIn('slow');
         return false;
 
     }
@@ -151,9 +156,9 @@
             title: "Eternity Clinica"
         });
        
-        $('#Centro').fadeOut();
-        $('#Paulista').fadeOut();
-        $("#Jababaquara").fadeIn(10);
+        //$('#Centro').fadeOut();
+        //$('#Paulista').fadeOut();
+        //$("#Jababaquara").fadeIn(10);
         return false;
     }
 
@@ -175,9 +180,9 @@
         });
 
         
-        $("#Jababaquara").fadeOut();
-        $('#Centro').fadeOut();
-        $('#Paulista').fadeIn('slow');
+        //$("#Jababaquara").fadeOut();
+        //$('#Centro').fadeOut();
+        //$('#Paulista').fadeIn('slow');
         return false;
     }
 

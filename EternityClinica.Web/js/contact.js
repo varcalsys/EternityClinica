@@ -57,7 +57,7 @@ jQuery(document).ready(function ($) { // wait until the document is ready
                 }
                 else {
                     $('#err-state').slideDown('slow');
-                    $("#err-state").html('An error occurred: ' + error + '');
+                    $("#err-state").html('Ocorreu um erro ' + error + '');
                 }
             },
             success: function (data) {
@@ -68,6 +68,7 @@ jQuery(document).ready(function ($) { // wait until the document is ready
 
                     $('#ajax-form').slideUp('slow');
                     $('#ajaxsuccess').slideDown('slow');
+                    return true;
                 }
             }
         });

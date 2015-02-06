@@ -61,12 +61,7 @@ namespace EternityClinica.Web.Controllers
                 return "erro";
             }
         }
-
-        public ActionResult Unidades()
-        {
-            return View();
-        }
-
+       
 
         public ActionResult Convenios()
         {

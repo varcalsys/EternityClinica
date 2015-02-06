@@ -8,7 +8,7 @@ namespace EterniyClinica.Domain
     public class SendMail
     {
         const string nomeRemetente = "Eternity Clinica";
-        const string emailRemetente = "eternityclinica@eternity.com";
+        const string emailRemetente = "eternityclinica@eternityclinica.com";
         const string senha = "admin@123";
         const string SMTP = "webmail.eternityclinica.com";
         
