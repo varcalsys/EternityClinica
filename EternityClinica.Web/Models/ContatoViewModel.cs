@@ -14,6 +14,7 @@ namespace EternityClinica.Web.Models
         [RegularExpression(@"^([\w\-]+\.)*[\w\- ]+@([\w\- ]+\.)+([\w\-]{2,3})$", ErrorMessage = " * Email inválido")]
         public string Email { get; set; }
 
+        [MaxLength(10,ErrorMessage = "Máximo 10 caractéres")]
         public string Telefone { get; set; }
 
         [Required(ErrorMessage = " * Campo obrigatório")]

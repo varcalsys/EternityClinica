@@ -1,6 +1,6 @@
 ﻿@model EternityClinica.Web.Models.ContatoViewModel
 @{
-    ViewBag.Title = "Contato";
+    ViewBag.Title = "Eternity | Contato";
     ViewBag.SelectedMenu = "contato";
     
 }
@@ -37,9 +37,10 @@
                                 <span class="error" id="err-emailvld"> Formato de email inválido</span>
                             </p>
                             <p>
-                                <label for="Telefone"><span class="required">*</span> Telefone</label>
-                                <input name="Telefone" type="text" id="Telefone" size="50" value="" />
-                                <span class="error" id="err-phone"> Digite seu telefone</span>
+                                <label for="Telefone"><span class="required">*</span> Telefone/Celular</label>
+                                <input name="Telefone" type="text" id="Telefone" size="50" value=""  maxlength="15" />
+                                <span class="error" id="err-phone"> Digite seu telefone ou celular</span>
+                                <span class="error" id="err-phonevld"> Telefone/Celular inválido</span>
                             </p>
                             <p>
                                 <label for="Assunto"><span class="required">*</span> Assunto</label>

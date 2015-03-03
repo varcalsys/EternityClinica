@@ -31,6 +31,9 @@ jQuery(document).ready(function ($) { // wait until the document is ready
         if (phone == "" || phone == " ") {
             $('#err-phone').fadeIn('slow'); // show the error message
             error = true; // change the error state to true
+        }else if(!phoneVal(phone)){
+            $('#err-phonevld').fadeIn("slow");
+            error = true;
         }
 
         var comment = $('textarea#Comentario').val(); // get the value of the input field
@@ -75,4 +78,15 @@ jQuery(document).ready(function ($) { // wait until the document is ready
 
         return false; // stops user browser being directed to the php file
     }); // end click function
+
+
+    function phoneVal(num) {
+       
+        var int = num.length;     
+        if (int < 14){           
+            return false;
+        } else {           
+            return true;
+        }       
+    };
 });

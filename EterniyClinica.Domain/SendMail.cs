@@ -49,7 +49,13 @@ namespace EterniyClinica.Domain
         }
         public void EnviaEmailResponsavel(Contato contato)
         {
-            
+
+            string mensagem = "Assunto: "+contato.Assunto+"<br/>"+
+                              "Mensagem: " + contato.Comentario + "<br/><br/>" +
+                              "Nome: " + contato.Nome + "<br/>" +
+                              "Telefone: " + contato.Telefone + "<br/>" +
+                              "Email: "+contato.Email;
+
             //Criacao do email
             var objEmail = new MailMessage();
             objEmail.From = new MailAddress(nomeRemetente + "<" + emailRemetente + ">");
@@ -57,7 +63,7 @@ namespace EterniyClinica.Domain
             objEmail.Priority = MailPriority.Normal;
             objEmail.IsBodyHtml = true;
             objEmail.Subject = contato.Assunto + "( Enviada pelo Site)";
-            objEmail.Body = contato.Comentario;
+            objEmail.Body = mensagem;
             //Evitar caracteres estranhos
             objEmail.SubjectEncoding = Encoding.GetEncoding("ISO-8859-1");
             objEmail.BodyEncoding = Encoding.GetEncoding("ISO-8859-1");
