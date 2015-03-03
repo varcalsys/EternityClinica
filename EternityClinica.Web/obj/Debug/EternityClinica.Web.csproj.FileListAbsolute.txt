@@ -55,3 +55,34 @@ D:\Projetos\EternityClinica\EternityClinica.Web\bin\EterniyClinica.Domain.dll
 D:\Projetos\EternityClinica\EternityClinica.Web\bin\EternityClinica.Util.pdb
 D:\Projetos\EternityClinica\EternityClinica.Web\bin\EterniyClinica.Domain.pdb
 D:\Projetos\EternityClinica\EternityClinica.Web\bin\jQuery.Validation.Unobtrusive.Native.dll
+D:\Projetos .Net\EternityClinica\EternityClinica.Web\bin\EternityClinica.Web.dll.config
+D:\Projetos .Net\EternityClinica\EternityClinica.Web\bin\EternityClinica.Web.dll
+D:\Projetos .Net\EternityClinica\EternityClinica.Web\bin\EternityClinica.Web.pdb
+D:\Projetos .Net\EternityClinica\EternityClinica.Web\bin\Antlr3.Runtime.dll
+D:\Projetos .Net\EternityClinica\EternityClinica.Web\bin\EternityClinica.Util.dll
+D:\Projetos .Net\EternityClinica\EternityClinica.Web\bin\EterniyClinica.Domain.dll
+D:\Projetos .Net\EternityClinica\EternityClinica.Web\bin\jQuery.Validation.Unobtrusive.Native.dll
+D:\Projetos .Net\EternityClinica\EternityClinica.Web\bin\Microsoft.Web.Infrastructure.dll
+D:\Projetos .Net\EternityClinica\EternityClinica.Web\bin\Newtonsoft.Json.dll
+D:\Projetos .Net\EternityClinica\EternityClinica.Web\bin\System.Web.Helpers.dll
+D:\Projetos .Net\EternityClinica\EternityClinica.Web\bin\System.Web.Mvc.dll
+D:\Projetos .Net\EternityClinica\EternityClinica.Web\bin\System.Web.Optimization.dll
+D:\Projetos .Net\EternityClinica\EternityClinica.Web\bin\System.Web.Razor.dll
+D:\Projetos .Net\EternityClinica\EternityClinica.Web\bin\System.Web.WebPages.Deployment.dll
+D:\Projetos .Net\EternityClinica\EternityClinica.Web\bin\System.Web.WebPages.dll
+D:\Projetos .Net\EternityClinica\EternityClinica.Web\bin\System.Web.WebPages.Razor.dll
+D:\Projetos .Net\EternityClinica\EternityClinica.Web\bin\WebGrease.dll
+D:\Projetos .Net\EternityClinica\EternityClinica.Web\bin\EternityClinica.Util.pdb
+D:\Projetos .Net\EternityClinica\EternityClinica.Web\bin\EterniyClinica.Domain.pdb
+D:\Projetos .Net\EternityClinica\EternityClinica.Web\bin\System.Web.Helpers.xml
+D:\Projetos .Net\EternityClinica\EternityClinica.Web\bin\System.Web.Mvc.xml
+D:\Projetos .Net\EternityClinica\EternityClinica.Web\bin\System.Web.Optimization.xml
+D:\Projetos .Net\EternityClinica\EternityClinica.Web\bin\System.Web.Razor.xml
+D:\Projetos .Net\EternityClinica\EternityClinica.Web\bin\System.Web.WebPages.xml
+D:\Projetos .Net\EternityClinica\EternityClinica.Web\bin\System.Web.WebPages.Deployment.xml
+D:\Projetos .Net\EternityClinica\EternityClinica.Web\bin\System.Web.WebPages.Razor.xml
+D:\Projetos .Net\EternityClinica\EternityClinica.Web\bin\Antlr3.Runtime.pdb
+D:\Projetos .Net\EternityClinica\EternityClinica.Web\bin\Newtonsoft.Json.xml
+D:\Projetos .Net\EternityClinica\EternityClinica.Web\obj\Debug\EternityClinica.Web.csprojResolveAssemblyReference.cache
+D:\Projetos .Net\EternityClinica\EternityClinica.Web\obj\Debug\EternityClinica.Web.dll
+D:\Projetos .Net\EternityClinica\EternityClinica.Web\obj\Debug\EternityClinica.Web.pdb

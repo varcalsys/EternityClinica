@@ -67,6 +67,11 @@ namespace EternityClinica.Web.Controllers
         {
             return View();
         }
+
+        public ActionResult Cursos()
+        {
+            return View();
+        }
                     
         public ActionResult Fotos()
         {

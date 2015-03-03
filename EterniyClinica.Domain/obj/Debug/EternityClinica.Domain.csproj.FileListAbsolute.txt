@@ -8,3 +8,8 @@ D:\Projetos\EternityClinica\EterniyClinica.Domain\bin\Debug\EterniyClinica.Domai
 D:\Projetos\EternityClinica\EterniyClinica.Domain\obj\Debug\EternityClinica.Domain.csprojResolveAssemblyReference.cache
 D:\Projetos\EternityClinica\EterniyClinica.Domain\obj\Debug\EterniyClinica.Domain.dll
 D:\Projetos\EternityClinica\EterniyClinica.Domain\obj\Debug\EterniyClinica.Domain.pdb
+D:\Projetos .Net\EternityClinica\EterniyClinica.Domain\bin\Debug\EterniyClinica.Domain.dll
+D:\Projetos .Net\EternityClinica\EterniyClinica.Domain\bin\Debug\EterniyClinica.Domain.pdb
+D:\Projetos .Net\EternityClinica\EterniyClinica.Domain\obj\Debug\EternityClinica.Domain.csprojResolveAssemblyReference.cache
+D:\Projetos .Net\EternityClinica\EterniyClinica.Domain\obj\Debug\EterniyClinica.Domain.dll
+D:\Projetos .Net\EternityClinica\EterniyClinica.Domain\obj\Debug\EterniyClinica.Domain.pdb
